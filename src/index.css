@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+/* Definiujemy nasz jasno fioletowy motyw w nowym bloku @theme */
+@theme {
+  --color-admin-light: #f3e8ff;
+  --color-admin-DEFAULT: #d8b4fe;
+  --color-admin-dark: #a855f7;
+  --color-admin-text: #4c1d95;
+}
+
+/* Aplikujemy tło i kolor tekstu na całą aplikację */
+body {
+  @apply bg-admin-light text-admin-text;
+}
