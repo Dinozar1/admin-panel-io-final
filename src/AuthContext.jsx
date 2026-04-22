@@ -3,7 +3,7 @@ import axios from 'axios';
 
 // Tworzymy własną instancję Axios
 export const api = axios.create({
-  baseURL: '/api',
+  baseURL: 'https://api.nexonpay.pl/api',
   withCredentials: true, // Wymagane dla ciasteczek HttpOnly
 });
 
