@@ -23,7 +23,6 @@ export default function Login() {
       if (response.data.success) {
         // Zapisujemy token do globalnego stanu
         setToken(response.data.accessToken);
-        // Tutaj docelowo dodasz przekierowanie do dashboardu np. za pomocą react-router-dom
       }
     } catch (err) {
       setError(err.response?.data?.message || 'Wystąpił błąd podczas logowania.');
